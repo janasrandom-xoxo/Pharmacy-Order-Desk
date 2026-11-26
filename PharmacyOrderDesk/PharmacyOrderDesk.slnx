@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="PharmacyOrderDesk.vcxproj" />
+  <Project Path="PharmacyOrderDesk.vcxproj" Id="c5214ce7-8c1a-4ecd-887f-5a7e7a93866d" />
 </Solution>

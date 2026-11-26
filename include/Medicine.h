@@ -1,4 +1,4 @@
-#programa once
+#pragma once
 #include<string>
 using namespace std;
 
