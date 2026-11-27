@@ -1,0 +1,14 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "Pharmacy.03DB088E\\x64\\Debug\\PharmacyOrderDesk.obj",
+            "outputs": [
+                "Pharmacy.03DB088E\\x64\\Debug\\PharmacyOrderDesk.cpp.obj.dt.module.json",
+                "Pharmacy.03DB088E\\x64\\Debug\\PharmacyOrderDesk.cpp.obj.dt.d.json"
+            ],
+            "requires": []
+        }
+    ]
+}
