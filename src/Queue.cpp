@@ -10,7 +10,7 @@ void Queue::initializeQueue() {
 
 void Queue::enqueuePrescription(int prescriptionID, string patientName, int medicineID, int quantity) {
     if (isQueueFull()) {
-        cout << "Queue is full!" << endl;
+        cout << "Queue is full" << endl;
     }
     else {
         if (isQueueEmpty()) {
@@ -22,13 +22,13 @@ void Queue::enqueuePrescription(int prescriptionID, string patientName, int medi
         prescriptions[rear].medicineID = medicineID;
         prescriptions[rear].quantity = quantity;
         count++;
-        cout << "Prescription added successfully." << endl;
+        cout << "Prescription added successfully" << endl;
     }
 }
 
 void Queue::dequeuePrescription() {
     if (isQueueEmpty()) {
-        cout << "Queue is empty!" << endl;
+        cout << "Queue is empty" << endl;
     }
     else if (count == 1) {
         front = -1;
@@ -43,7 +43,7 @@ void Queue::dequeuePrescription() {
 
 void Queue::peekPrescription() {
     if (isQueueEmpty()) {
-        cout << "Queue is empty!" << endl;
+        cout << "Queue is empty" << endl;
     }
     else {
         cout << "Next prescription:" << endl;
@@ -56,7 +56,7 @@ void Queue::peekPrescription() {
 
 void Queue::displayQueue() {
     if (isQueueEmpty()) {
-        cout << "No prescriptions in the queue." << endl;
+        cout << "No prescriptions in the queue" << endl;
     }
     else {
         for (int i = 0; i < count; i++) {
@@ -66,7 +66,7 @@ void Queue::displayQueue() {
             cout << "Patient: " << prescriptions[index].patientName << endl;
             cout << "Medicine ID: " << prescriptions[index].medicineID << endl;
             cout << "Quantity: " << prescriptions[index].quantity << endl;
-            cout << "-----------------" << endl;
+            cout << "-----------------------------------------------" << endl;
         }
     }
 }
