@@ -1,4 +1,4 @@
-#programa once
+#pragma once
 #include<Medicine.h>
 
 struct MedicineNode {
@@ -7,13 +7,13 @@ struct MedicineNode {
 };
 
 struct LinkedList {
-	Medicine* head;
+	MedicineNode* head;
 
-	void insertMedicine();
+	void insertMedicine(Medicine med);
 	void displayMedicines();
-	bool searchMedincine();
-	bool updateMedicine();
-	bool deleteMedicine();
+	int searchMedicine(int id);
+	void updateMedicine(int id, Medicine med);
+	void deleteMedicine(int id);
 
 };
 
