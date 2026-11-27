@@ -18,7 +18,6 @@ struct Queue {
     void enqueuePrescription(int prescriptionID, string patientName, int medicineID, int quantity);
     void dequeuePrescription();
     void peekPrescription();
-    bool searchPrescription(int prescriptionID);
     void displayQueue();
     bool isQueueEmpty();
     bool isQueueFull();
