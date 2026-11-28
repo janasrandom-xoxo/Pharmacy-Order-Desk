@@ -43,7 +43,7 @@ bool BST::isDuplicateID(int medicineID) {
 void BST::insertBST(Medicine medicine) {
 
     if (isDuplicateID(medicine.MedicineID)) {
-        cout << "Medicine ID already exists." << endl;
+        cout << "Medicine ID already exists " << endl;
         return;
     }
 
@@ -54,7 +54,7 @@ void BST::insertBST(Medicine medicine) {
 
     if (root == NULL) {
         root = newNode;
-        cout << "Medicine added successfully." << endl;
+        cout << "Medicine added successfully " << endl;
         return;
     }
 
@@ -77,5 +77,5 @@ void BST::insertBST(Medicine medicine) {
         }
     }
 
-    cout << "Medicine added successfully." << endl;
+    cout << "Medicine added successfully " << endl;
 }
