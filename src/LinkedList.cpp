@@ -51,3 +51,57 @@ int LinkedList::searchMedicine(int id) {
 	cout << "Medicine is not Found" << endl;
 	return 0;
 }
+
+void LinkedList::updateMedicine(int id, Medicine med) {
+	MedicineNode* temp = head;
+
+	while (temp != NULL) {
+
+		if (temp->data.MedicineID == id) {
+
+			temp->data.MedicineName = med.MedicineName;
+			temp->data.MedicinePrice = med.MedicinePrice;
+			temp->data.MedicineQuantity = med.MedicineQuantity;
+
+			cout << "Medicine Updated Successfully." << endl;
+			return;
+		}
+
+		temp = temp->next;
+	}
+
+	cout << "Medicine is not Found." << endl;
+}
+
+void LinkedList::deleteMedicine(int id) {
+	if (head == NULL) {
+		cout << "No medicines available." << endl;
+		return;
+	}
+
+	MedicineNode* temp = head;
+	MedicineNode* prev = NULL;
+
+	while (temp != NULL) {
+
+		if (temp->data.MedicineID == id) {
+
+			if (prev == NULL) {
+				head = temp->next;
+			}
+			else {
+				prev->next = temp->next;
+			}
+
+			delete temp;
+
+			cout << "Medicine Deleted Successfully." << endl;
+			return;
+		}
+
+		prev = temp;
+		temp = temp->next;
+	}
+
+	cout << "Medicine is not Found." << endl;
+}

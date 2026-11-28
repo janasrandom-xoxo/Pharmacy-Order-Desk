@@ -7,7 +7,7 @@ struct MedicineNode {
 };
 
 struct LinkedList {
-	MedicineNode* head;
+	MedicineNode* head = nullptr;
 
 	void insertMedicine(Medicine med);
 	void displayMedicines();
