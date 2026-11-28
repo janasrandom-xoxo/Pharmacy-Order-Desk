@@ -1,5 +1,5 @@
 #pragma once
-#include<Medicine.h>
+#include"Medicine.h"
 
 struct MedicineNode {
 	Medicine data;
